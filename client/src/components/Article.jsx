@@ -13,7 +13,7 @@ function Article() {
       );
       setSortedLocation(locations.data.data);
       console.log(inputLocation);
-      console.log(sortedLocation)
+      console.log(sortedLocation);
     } catch {
       alert("can not get data");
     }
@@ -74,7 +74,12 @@ function Article() {
               </button>
             ))}
             และ{" "}
-            <button className="underline mr-1 ml-1" onClick={() => handleTagButton(location.tags[location.tags.length - 1])}>
+            <button
+              className="underline mr-1 ml-1"
+              onClick={() =>
+                handleTagButton(location.tags[location.tags.length - 1])
+              }
+            >
               {location.tags[location.tags.length - 1]}
             </button>
           </p>
